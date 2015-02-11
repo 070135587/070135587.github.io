@@ -1,0 +1,16 @@
+.navbar {
+   background-color: transparent;
+   background: transparent;
+   border-bottom:0;
+}
+.active{
+	background-color:transparent !important; 
+	background:transparent !important;
+	border-bottom:0;
+}
+body{
+
+}
+.lb{
+	font-family: 'Lobster', cursive;
+}

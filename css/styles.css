@@ -21,9 +21,26 @@ body{
 	color:white !important;
 	font-family: 'Lobster', cursive;
 }
+.qs{
+	font-family: 'Quicksand', sans-serif;
+}
+.os{
+	font-family: 'Open Sans', sans-serif;
+}
 a{
 	color:white !important;
 }
 .background{
+	position:absolute;
 	width:100%;
+	bottom:0px;
+}
+.header{
+	position:absolute;
+	top:30%;
+	width:100%;
+	padding-left:15%;
+	text-align:center;
+	color:white;
+	font-size:9em;
 }

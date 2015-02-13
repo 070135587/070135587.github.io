@@ -1,0 +1,89 @@
+	<!DOCTYPE html>
+	<html lang="en">
+	  	<head>
+	    <meta charset="UTF-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+	    <meta name="description" content="">
+	    <meta name="author" content="">
+
+	    <title>Blog It! - Home</title>
+
+	    <link href='http://fonts.googleapis.com/css?family=Quicksand:300|Open+Sans|Lobster|Dancing+Script' rel='stylesheet' type='text/css'>
+
+	    <!-- Bootstrap core CSS -->
+	    <link href="css/bootstrap.min.css" rel="stylesheet">
+	    <link href="css/bootstrap-theme.min.css" rel="stylesheet">
+	    <link href="css/animate.css" rel="stylesheet">
+	    <link href="css/styles.css" rel="stylesheet">
+
+	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	    <script src="js/parallax.js"></script>
+
+	    <script>
+        $( window ).load(function() {
+        	$(this).delay(1000);
+	        $("body").show();
+	    });
+	    </script>
+
+	    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	    <!--[if lt IE 9]>
+	      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	    <![endif]-->
+	</head>
+
+	<body>
+		<img class="background" src="http://i.imgur.com/cd4UyOl.jpg"/>
+	    <!-- Static navbar -->
+	    <nav class="navbar navbar-default navbar-static-top">
+		    <div class="container">
+		        <div class="navbar-header">
+		            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+		      	        <span class="sr-only">Toggle navigation</span>
+		        	    <span class="icon-bar"></span>
+		            	<span class="icon-bar"></span>
+		        	    <span class="icon-bar"></span>
+		            </button>
+		            <a class="navbar-brand lb" href="#">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Blog It!</a>
+		        </div>
+		        <div id="navbar" class="navbar-collapse collapse">
+		            <ul class="nav navbar-nav navbar-right">
+			            <li class="active lb"><a>Home</a></li>
+			            <li class="lb"><a href="blog.html">Blog<span class="sr-only">(current)</span></a></li>
+			            <li class="lb"><a href="about.html">About</a></li>
+		            </ul>
+		        </div><!--/.nav-collapse -->
+		    </div>
+	    </nav>
+
+	    <div class="container header">
+
+		    <h1 class="qs header-text animated fadeInUp title" id="title">CIVICS</h1>
+		    <img src="http://i.imgur.com/VtEn3G8.png" class="animated fadeInUp title" style="position:absolute; left:-20px; top:125px; width:525px;"/>
+		    <p class="ds content animated fadeInUp" id="content">help me</p>
+		    <a href="blog.html"><button class="btn btn-default btn-transparent enter os animated fadeInUp" id="enter">Visit Blog</button></a>
+		    
+	    </div>
+
+
+	    <!-- Bootstrap core JavaScript
+	    ================================================== -->
+	    <!-- Placed at the end of the document so the pages load faster -->
+	    <script src="js/bootstrap.min.js"></script>
+	   	<!--<script>
+		    var d = new Date();
+			var n = d.getHours(); 
+			if(n<=12){
+				document.getElementById("content").innerHTML = "Good morning! Before you start your day, why not sit down and read a little something?";
+			}
+			else if(n>12 && n<=4){
+				document.getElementById("content").innerHTML = "help";
+			}
+			else{
+				document.getElementById("content").innerHTML = "Good evening! It's been a hectic day hasn't it? Come here, sit down, and enjoy some reading.";
+			}
+	    </script>-->
+    </body>
+</html>

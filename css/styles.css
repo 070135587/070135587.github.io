@@ -29,6 +29,9 @@ body{
 .os{
 	font-family: 'Open Sans', sans-serif;
 }
+.ds{
+	font-family: 'Dancing Script', cursive;
+}
 a{
 	color:white !important;
 }

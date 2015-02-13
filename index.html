@@ -9,7 +9,7 @@
 
 	    <title>Blog It! - Home</title>
 
-	    <link href='http://fonts.googleapis.com/css?family=Quicksand:300|Open+Sans|Lobster' rel='stylesheet' type='text/css'>
+	    <link href='http://fonts.googleapis.com/css?family=Quicksand:300|Open+Sans|Lobster|Dancing+Script' rel='stylesheet' type='text/css'>
 
 	    <!-- Bootstrap core CSS -->
 	    <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -23,6 +23,19 @@
         $( window ).load(function() {
 	        $("body").show();
 	    });
+	    </script>
+	    <script>
+	    var d = new Date();
+		var n = d.getHours(); 
+		if(n<=12){
+			document.getElementById("content").innerHTML = "Good morning! Before you start your day, why not sit down and read a little something?";
+		}
+		else if(n>12 && n<=4){
+			
+		}
+		else{
+			document.getElementById("content").innerHTML = "Good evening! It's been a hectic day hasn't it? Come here, sit down, and enjoy some reading.";
+		}
 	    </script>
 	    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 	    <!--[if lt IE 9]>
@@ -59,6 +72,8 @@
 
 	    <h1 class="qs header animated fadeInUp" id="title">CIVICS
 	    <img src="http://i.imgur.com/yaiNol4.png" style="position:absolute; left:0px; top:110px; width:445px;"/></h1>
+
+	    <p class="ds" id="content">[JAVASCRIPT ERROR]</p>
 	    </div>
 
 

@@ -1,67 +1,99 @@
-.navbar {
-   background-color: rgba(255,255,255,0.1);
-   background: rgba(255,255,255,0.1);
-   border-bottom:0;
-   z-index:9999;
-   position:absolute; 
-   top:0px; 
-   left:0; 
-   width:100%;
+#content{
+	-moz-animation-delay: 1s;
+	-webkit-animation-delay: 1s;
+    -moz-animation-duration: 1s;
+	-webkit-animation-duration: 1s;
+	}
+#title {
+  -moz-animation-duration: 0.9s;
+   -webkit-animation-duration: 0.9s;
+}
+#enter{
+	-moz-animation-delay: 1.5s;
+	-webkit-animation-delay: 1.5s;
+	-moz-animation-duration: 1s;
+   	-webkit-animation-duration: 1s;
 }
 .active{
-	background-color:transparent !important; 
+	background-color:transparent !important;
 	background:transparent !important;
 	border-bottom:0;
-}
-body{
-	display:none;
-	overflow:hidden;
-	background-color:black;
-}
-.lb{
-	font-size:1.3em;
-	color:white !important;
-	font-family: 'Lobster', cursive;
-}
-.qs{
-	font-family: 'Quicksand', sans-serif;
-}
-.os{
-	font-family: 'Open Sans', sans-serif;
-}
-.ds{
-	font-family: 'Dancing Script', cursive;
-}
-a{
-	color:white !important;
 }
 .background{
 	position:absolute;
 	width:100%;
 	bottom:0px;
 }
-.header{
+.btn-transparent{
+	color:white;
+	background-color:transparent;
+	border-color:white;
+	background-image:none;
+	-moz-transition: all 0.4s;
+	-webkit-transition: all 0.4s;
+}
+.btn-transparent:hover, .btn-transparent:active, .btn-transparent:focus{
+	background-color:white;
+	-moz-transition: all 0.4s;
+	-webkit-transition: all 0.4s;
+}
+.ds{
+	font-family: 'Dancing Script', cursive;
+}
+.enter{
 	position:absolute;
-	top:27%;
-	right:20%;
+	left:0px;
+	top:325px;
+	left:170px;
+	font-size:1em;
+}
+.header{
+	position:fixed;
+	top:25%;
+	right:0px;
+	width:550px;
+}
+.header-text{
 	color:white;
 	font-size:9em;
 }
-#title {
-  -moz-animation-duration: 0.9s;
-  -webkit-animation-duration: 0.9s;
+.lb{
+	font-size:1.3em;
+	color:white !important;
+	font-family: 'Lobster', cursive;
 }
-#content{
-	-moz-animation-delay: 1s;
-	-webkit-animation-delay: 1s;
+.navbar {
+    background-color: rgba(255,255,255,0.1);
+    background: rgba(255,255,255,0.1);
+    border-bottom:0;
+    z-index:9999;
+    position:absolute;
+    top:0px;
+    left:0;
+    width:100%;
+}
+.os{
+	font-family: 'Open Sans', sans-serif;
+}
+.qs{
+	font-family: 'Quicksand', sans-serif;
+}
+a{
+	color:white !important;
+}
+body{
+	display:none;
+	overflow:hidden;
+	background-color:black;
 }
 
+/* Override */
 .content{
 	position:absolute;
 	top:175px;
 	left:0px;
 	text-align:center;
 	width:450px;
-	font-size:0.25em;
+	font-size:2em;
 	color:white;
 }

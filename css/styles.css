@@ -49,5 +49,19 @@ a{
 }
 #title {
   -moz-animation-duration: 0.9s;
-  -webkit-animation-duration: 1.5s;
+  -webkit-animation-duration: 0.9s;
+}
+#content{
+	-moz-animation-delay: 1s;
+	-webkit-animation-delay: 1s;
+}
+
+.content{
+	position:absolute;
+	top:175px;
+	left:0px;
+	text-align:center;
+	width:450px;
+	font-size:0.25em;
+	color:white;
 }

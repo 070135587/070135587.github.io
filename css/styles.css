@@ -11,8 +11,8 @@
 	-webkit-animation-delay: 0.5s;
 }
 #enter{
-	-moz-animation-delay: 2s;
-	-webkit-animation-delay: 2s;
+	-moz-animation-delay: 1.7s;
+	-webkit-animation-delay: 1.7s;
 	-moz-animation-duration: 1s;
    	-webkit-animation-duration: 1s;
 }

@@ -34,6 +34,9 @@
 	</head>
 
 	<body>
+		<video width="100%" height="100%" autoplay loop id="background">
+			<source src="http://zippy.gfycat.com/MindlessBrownCockerspaniel.webm" type="video/webm">
+		</video>
 		<img class="background" src="http://i.imgur.com/cd4UyOl.jpg"/>
 	    <!-- Static navbar -->
 	    <nav class="navbar navbar-default navbar-static-top">
@@ -62,7 +65,7 @@
 		    <h1 class="qs header-text animated fadeInUp title" id="title">CIVICS</h1>
 		    <img src="http://i.imgur.com/VtEn3G8.png" class="animated fadeInUp title" style="position:absolute; left:-20px; top:125px; width:525px;"/>
 		    <p class="ds content animated fadeInUp" id="content">help me</p>
-		    <a href="blog.html"><button class="btn btn-default btn-transparent enter os animated fadeInUp" id="enter">Visit Blog</button></a>
+		    <a href="blog.html" class="animated fadeIn" id="enter"><button class="btn btn-default btn-transparent enter os">Visit Blog</button></a>
 		    
 	    </div>
 
@@ -84,5 +87,9 @@
 				document.getElementById("content").innerHTML = "Good evening! It's been a hectic day hasn't it? Come here, sit down, and enjoy some reading.";
 			}
 	    </script>-->
+	    <script>
+	    var vid = document.getElementById("background");
+		vid.playbackRate = 0.5;
+	    </script>
     </body>
 </html>

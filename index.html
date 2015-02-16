@@ -35,7 +35,7 @@
 	</head>
 
 	<body>
-		<video autoplay loop id="background" style="margin-top:50px;" height="100%" style="z-index:2;">
+		<video autoplay loop id="background" style="margin-top:50px;" height="100%" style="position:absolute; z-index:10;">
 			<source src="http://zippy.gfycat.com/MindlessBrownCockerspaniel.webm" type="video/webm">
 		</video>
 		<img class="background" src="http://i.imgur.com/cd4UyOl.jpg"/>
@@ -104,10 +104,8 @@
 	    <script>
 	    var vid = document.getElementById("background");
 		vid.playbackRate = 0.5;
-
-		var h = document.getElementById("background");
+ 		var h = document.getElementById("background");
 		h.height = screen.height;
-		console.error("hehehehehe");
 	    </script>
     </body>
     	    <!--[if lt IE 9]>

@@ -51,6 +51,11 @@
 .ds{
 	font-family: 'Dancing Script', cursive;
 }
+.down{
+	position:fixed;
+	bottom:40px;
+	left:50%;
+}
 .enter{
 	position:absolute;
 	left:0px;
@@ -74,10 +79,10 @@
 }
 .lb{
 	font-size:1.3em;
-	color:white !important;
+	color:black !important;
 	font-family: 'Lobster', cursive;
 }
-.navbar {
+.navbar-transparent {
     background-color: rgba(255,255,255,0.1);
     background: rgba(255,255,255,0.1);
     border-bottom:0;
@@ -87,15 +92,22 @@
     left:0;
     width:100%;
 }
+.navbar-fixed-bottom{
+	position:fixed;
+	bottom:0px;
+}
 .os{
 	font-family: 'Open Sans', sans-serif;
 	font-weight:300;
+}
+.pfs{
+	font-family: 'Petit Formal Script', cursive;
 }
 .qs{
 	font-family: 'Quicksand', sans-serif;
 }
 a{
-	color:white !important;
+	color:black !important;
 }
 body{
 	display:none;
@@ -110,6 +122,6 @@ body{
 	left:0px;
 	text-align:center;
 	width:450px;
-	font-size:2em;
+	font-size:1.5em;
 	color:white;
 }

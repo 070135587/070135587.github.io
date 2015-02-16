@@ -9,7 +9,8 @@
 
 	    <title>Blog It! - Home</title>
 
-	    <link href='http://fonts.googleapis.com/css?family=Quicksand:300|Open+Sans|Lobster|Dancing+Script' rel='stylesheet' type='text/css'>
+	    <link href='http://fonts.googleapis.com/css?family=Quicksand:300|Open+Sans|Lobster|Dancing+Script|Petit+Formal+Script' rel='stylesheet' type='text/css'>
+	    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 
 	    <!-- Bootstrap core CSS -->
 	    <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -34,12 +35,11 @@
 	</head>
 
 	<body>
-		<video width="100%" height="100%" autoplay loop id="background">
+		<video width="100%" height="100%" autoplay loop id="background" style="margin-top:50px;">
 			<source src="http://zippy.gfycat.com/MindlessBrownCockerspaniel.webm" type="video/webm">
 		</video>
-		<img class="background" src="http://i.imgur.com/cd4UyOl.jpg"/>
 	    <!-- Static navbar -->
-	    <nav class="navbar navbar-default navbar-static-top">
+	    <nav class="navbar navbar-default navbar-fixed-top">
 		    <div class="container">
 		        <div class="navbar-header">
 		            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -48,7 +48,7 @@
 		            	<span class="icon-bar"></span>
 		        	    <span class="icon-bar"></span>
 		            </button>
-		            <a class="navbar-brand lb" href="#">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Blog It!</a>
+		            <a class="navbar-brand lb" href="#">Blog It!</a>
 		        </div>
 		        <div id="navbar" class="navbar-collapse collapse">
 		            <ul class="nav navbar-nav navbar-right">
@@ -64,29 +64,38 @@
 
 		    <h1 class="qs header-text animated fadeInUp title" id="title">CIVICS</h1>
 		    <img src="http://i.imgur.com/VtEn3G8.png" class="animated fadeInUp title" style="position:absolute; left:-20px; top:125px; width:525px;"/>
-		    <p class="ds content animated fadeInUp" id="content">help me</p>
+		    <p class="pfs content animated fadeInUp" id="content">help me</p>
 		    <a href="blog.html" class="animated fadeIn" id="enter"><button class="btn btn-default btn-transparent enter os">Visit Blog</button></a>
 		    
 	    </div>
 
-
+	    <nav class="navbar navbar-default navbar-fixed-bottom">
+		    <div class="container">
+		        <div class="navbar-header">
+		            <p class="os" href="#" style="padding-top:15px;">CHV201</p>
+		        </div>
+	            <ul class="nav navbar-nav navbar-right">
+		            <p class="navbar-brand os" style="font-size:1em; margin-bottom:0px;">&copy; Samuel Yang 2015</p>
+	            </ul><!--/.nav-collapse -->
+		    </div>
+	    </nav>
 	    <!-- Bootstrap core JavaScript
 	    ================================================== -->
 	    <!-- Placed at the end of the document so the pages load faster -->
 	    <script src="js/bootstrap.min.js"></script>
-	   	<!--<script>
+	   	<script>
 		    var d = new Date();
 			var n = d.getHours(); 
 			if(n<=12){
-				document.getElementById("content").innerHTML = "Good morning! Before you start your day, why not sit down and read a little something?";
+				document.getElementById("content").innerHTML = "Good morning! Before you start your day, why not sit down and read something?";
 			}
 			else if(n>12 && n<=4){
-				document.getElementById("content").innerHTML = "help";
+				document.getElementById("content").innerHTML = "Afternoon already? My has the day gone by fast.";
 			}
 			else{
-				document.getElementById("content").innerHTML = "Good evening! It's been a hectic day hasn't it? Come here, sit down, and enjoy some reading.";
+				document.getElementById("content").innerHTML = "Good evening! It's been a hectic day hasn't it? Come, sit down, and enjoy something.";
 			}
-	    </script>-->
+	    </script>
 	    <script>
 	    var vid = document.getElementById("background");
 		vid.playbackRate = 0.5;

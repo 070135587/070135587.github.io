@@ -20,18 +20,6 @@
 
 	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 
-	    <script>
-	    $ ( window ).ready(function(){
-	    	document.getElementById("progress").style.width="75%";
-	    	$(this).delay(500);
-	    });
-        $( window ).load(function() {
-        	$("loading").hide();
-        	$(this).delay(2000);
-	        $("body").show();
-	    });
-	    </script>
-
 	    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 	    <!--[if lt IE 9]>
 	      	<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -39,88 +27,100 @@
 	    <![endif]-->
 	</head>
 
-	<loading>
-		<div class="progress">
-  			<div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 45%" id="progress">
-		  		things are happening i swear
-		  	</div>
-		</div>
-	</loading>
-
 	<body>
-		<video autoplay loop id="background" style="margin-top:50px;" height="100%" style="position:absolute; z-index:10;">
-			<source src="http://zippy.gfycat.com/MindlessBrownCockerspaniel.webm" type="video/webm">
-		</video>
-		<img class="background" src="http://i.imgur.com/cd4UyOl.jpg"/>
-	    <!-- Static navbar -->
-	    <nav class="navbar navbar-default navbar-fixed-top">
-		    <div class="container">
-		        <div class="navbar-header">
-		            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-		      	        <span class="sr-only">Toggle navigation</span>
-		        	    <span class="icon-bar"></span>
-		            	<span class="icon-bar"></span>
-		        	    <span class="icon-bar"></span>
-		            </button>
-		            <a class="navbar-brand lb" href="#">Blog It!</a>
-		        </div>
-		        <div id="navbar" class="navbar-collapse collapse">
+		<div id="loading">
+			<div class="progress">
+	  			<div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 45%" id="progress">
+			  		things are happening i swear
+			  	</div>
+			</div>
+		</div>
+		<div id="body">
+			<video autoplay loop id="background" style="margin-top:50px;" height="100%" style="position:absolute; z-index:10;">
+				<source src="http://zippy.gfycat.com/MindlessBrownCockerspaniel.webm" type="video/webm">
+			</video>
+			<img class="background" src="http://i.imgur.com/cd4UyOl.jpg"/>
+		    <!-- Static navbar -->
+		    <nav class="navbar navbar-default navbar-fixed-top">
+			    <div class="container">
+			        <div class="navbar-header">
+			            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+			      	        <span class="sr-only">Toggle navigation</span>
+			        	    <span class="icon-bar"></span>
+			            	<span class="icon-bar"></span>
+			        	    <span class="icon-bar"></span>
+			            </button>
+			            <a class="navbar-brand lb" href="#">Blog It!</a>
+			        </div>
+			        <div id="navbar" class="navbar-collapse collapse">
+			            <ul class="nav navbar-nav navbar-right">
+				            <li class="active lb"><a>Home</a></li>
+				            <li class="lb"><a href="blog.html">Blog<span class="sr-only">(current)</span></a></li>
+				            <li class="lb"><a href="about.html">About</a></li>
+			            </ul>
+			        </div><!--/.nav-collapse -->
+			    </div>
+		    </nav>
+
+		    <div style="z-index:-1; position:fixed; color:white; left:30%; top:50%;">
+			    <h1>why are you seeing this <br> you shouldnt be seeing this <br><br> stop </h1>
+		    </div>
+
+		    <div class="container header">
+
+			    <h1 class="qs header-text animated fadeInUp title" id="title">CIVICS</h1>
+			    <img src="http://i.imgur.com/VtEn3G8.png" class="animated fadeInUp title" style="position:absolute; left:-20px; top:125px; width:525px;"/>
+			    <p class="pfs content animated fadeInUp" id="content">help me</p>
+			    <a href="blog.html" class="animated fadeIn" id="enter"><button class="btn btn-default btn-transparent enter os">Visit Blog</button></a>
+			    
+		    </div>
+
+		    <nav class="navbar navbar-default navbar-fixed-bottom">
+			    <div class="container">
+			        <div class="navbar-header">
+			            <p class="os" href="#" style="padding-top:15px;">CHV201</p>
+			        </div>
 		            <ul class="nav navbar-nav navbar-right">
-			            <li class="active lb"><a>Home</a></li>
-			            <li class="lb"><a href="blog.html">Blog<span class="sr-only">(current)</span></a></li>
-			            <li class="lb"><a href="about.html">About</a></li>
-		            </ul>
-		        </div><!--/.nav-collapse -->
-		    </div>
-	    </nav>
-
-	    <div style="z-index:-1; position:fixed; color:white; left:30%; top:50%;">
-		    <h1>why are you seeing this <br> you shouldnt be seeing this <br><br> stop </h1>
+			            <p class="navbar-brand os" style="font-size:1em; margin-bottom:0px;">&copy; Samuel Yang 2015</p>
+		            </ul><!--/.nav-collapse -->
+			    </div>
+		    </nav>
+		    <!-- Bootstrap core JavaScript
+		    ================================================== -->
+		    <!-- Placed at the end of the document so the pages load faster -->
+		    <script src="js/bootstrap.min.js"></script>
+		   <!--	<script>
+			    var d = new Date();
+				var n = d.getHours(); 
+				if(n<=12){
+					document.getElementById("content").innerHTML = "Good morning! Before you start your day, why not sit down and read something?";
+				}
+				else if(n>12 && n<=16){
+					document.getElementById("content").innerHTML = "Afternoon already? My has the day gone by fast.";
+				}
+				else{
+					document.getElementById("content").innerHTML = "Good evening! It's been a hectic day hasn't it? Come, sit down, and enjoy something.";
+				}
+		    </script>-->
+		    <script>
+		    var vid = document.getElementById("background");
+			vid.playbackRate = 0.5;
+	 		var h = document.getElementById("background");
+			h.height = screen.height;
+		    </script>
 	    </div>
-
-	    <div class="container header">
-
-		    <h1 class="qs header-text animated fadeInUp title" id="title">CIVICS</h1>
-		    <img src="http://i.imgur.com/VtEn3G8.png" class="animated fadeInUp title" style="position:absolute; left:-20px; top:125px; width:525px;"/>
-		    <p class="pfs content animated fadeInUp" id="content">help me</p>
-		    <a href="blog.html" class="animated fadeIn" id="enter"><button class="btn btn-default btn-transparent enter os">Visit Blog</button></a>
-		    
-	    </div>
-
-	    <nav class="navbar navbar-default navbar-fixed-bottom">
-		    <div class="container">
-		        <div class="navbar-header">
-		            <p class="os" href="#" style="padding-top:15px;">CHV201</p>
-		        </div>
-	            <ul class="nav navbar-nav navbar-right">
-		            <p class="navbar-brand os" style="font-size:1em; margin-bottom:0px;">&copy; Samuel Yang 2015</p>
-	            </ul><!--/.nav-collapse -->
-		    </div>
-	    </nav>
-	    <!-- Bootstrap core JavaScript
-	    ================================================== -->
-	    <!-- Placed at the end of the document so the pages load faster -->
-	    <script src="js/bootstrap.min.js"></script>
-	   <!--	<script>
-		    var d = new Date();
-			var n = d.getHours(); 
-			if(n<=12){
-				document.getElementById("content").innerHTML = "Good morning! Before you start your day, why not sit down and read something?";
-			}
-			else if(n>12 && n<=16){
-				document.getElementById("content").innerHTML = "Afternoon already? My has the day gone by fast.";
-			}
-			else{
-				document.getElementById("content").innerHTML = "Good evening! It's been a hectic day hasn't it? Come, sit down, and enjoy something.";
-			}
-	    </script>-->
-	    <script>
-	    var vid = document.getElementById("background");
-		vid.playbackRate = 0.5;
- 		var h = document.getElementById("background");
-		h.height = screen.height;
-	    </script>
     </body>
+    	    <script>
+		    $ ( document ).ready(function(){
+		    	document.getElementById("progress").style.width="75%";
+		    	setTimeout( null , 500 );
+		    });
+	        $( window ).load(function() {
+	        	document.getElementById("loading").style.visibility="hidden";
+	        	setTimeout( null, 2000 );
+		        document.getElementById("body").style.visibility="block";
+		    });
+	    </script>
     	    <!--[if lt IE 9]>
 	      	<script>
 				document.getElementById("background").innerHTML="<source src='assets/background.mp4' type='video/mp4'>";

@@ -27,13 +27,13 @@
     <![endif]-->
   </head>
 
-  <body style="background-color:white; overflow:auto;">
+  <body style="background-color:white; overflow:auto;" id="body">
 
     <div class="blog-masthead">
       <div class="container">
         <nav class="blog-nav">
-          <a class="blog-nav-item" href="index.html" id="home">Home&nbsp;&nbsp;</a>
-          <a class="blog-nav-item" id="blog" style="position:fixed;">Blog
+          <a class="blog-nav-item" href="index.html" id="home">Home&nbsp;&nbsp;&nbsp;</a>
+          <a class="blog-nav-item" id="blog" style="cursor:default;">Blog
             <i class="fa fa-caret-up fa-lg currentpos" id="caret"></i>
           </a>
           <a class="blog-nav-item" href="#" id="about">About</a>
@@ -41,7 +41,7 @@
       </div>
     </div>
 
-    <div class="container">
+    <div class="container" id="content">
 
       <div class="blog-header">
         <h1 class="blog-title">Canada and Anti-Terrorism</h1>
@@ -164,10 +164,25 @@
       </script>
       <script>
       document.getElementById('home').onmouseover = function() {
-        document.getElementById("caret").style.left="-200%";
+        setTimeout(function(){ document.getElementById("caret").style.left="-215%" }, 100);
       };
       document.getElementById('home').onmouseout = function() {
-        document.getElementById("caret").style.left="-50%";
+        setTimeout(function(){ document.getElementById("caret").style.left="-55%" }, 50);
+      };
+      document.getElementById('blog').onmouseover = function() {
+        setTimeout(function(){ document.getElementById("caret").style.left="-55%" }, 100);
+      };
+      document.getElementById('blog').onmouseout = function() {
+        setTimeout(function(){ document.getElementById("caret").style.left="-55%" }, 50);
+      };
+      document.getElementById('about').onmouseover = function() {
+        setTimeout(function(){ document.getElementById("caret").style.left="120%" }, 100);
+      };
+      document.getElementById('about').onmouseout = function() {
+        setTimeout(function(){ document.getElementById("caret").style.left="-55%" }, 50);
+      };
+      document.getElementById('content').onmouseover = function() {
+        setTimeout(function(){ document.getElementById("caret").style.left="-55%" }, 100);
       };
       </script>
   </body>

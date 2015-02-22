@@ -1,0 +1,83 @@
+	<!DOCTYPE html>
+	<html lang="en">
+	  	<head>
+	    <meta charset="UTF-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+	    <meta name="description" content="">
+	    <meta name="author" content="">
+
+	    <title>Blog It! ~ Home</title>
+
+	    <link href='http://fonts.googleapis.com/css?family=Quicksand:300|Open+Sans|Lobster|Dancing+Script|Petit+Formal+Script' rel='stylesheet' type='text/css'>
+	    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+	    <!-- Bootstrap core CSS -->
+	    <link href="css/bootstrap.min.css" rel="stylesheet">
+	    <link href="css/bootstrap-theme.min.css" rel="stylesheet">
+	    <link href="css/animate.css" rel="stylesheet">
+	    <link href="css/styles.css" rel="stylesheet">
+	    <link href="css/blog.css" rel="stylesheet">
+
+	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+	    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	    <!--[if lt IE 9]>
+	      	<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	      	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	    <![endif]-->
+	</head>
+
+	<body id="body">
+    <div class="blog-masthead" style="position:absolute; z-index:99; width:100%;">
+      <div class="container">
+        <nav class="blog-nav">
+          <a class="blog-nav-item" href="#" id="home" style="cursor:default;">Home
+            <i class="fa fa-caret-up fa-lg currentpos" id="caret"></i></a>
+          <a class="blog-nav-item" href="blog.html" id="blog">Blog</a>
+          <a class="blog-nav-item" href="#" id="about">&nbsp;&nbsp;&nbsp;About</a>
+        </nav>
+      </div>
+    </div>
+    <div class="container" id="content" style="position:fixed; left:-50px; top:-50px;">
+			<video autoplay loop id="background" style="margin-top:50px;" height="100%" style="position:absolute; z-index:10;">
+				<source src="http://zippy.gfycat.com/MindlessBrownCockerspaniel.webm" type="video/webm">
+			</video>
+    </div>
+    </body>
+          <script>
+      document.getElementById('home').onmouseover = function() {
+        setTimeout(function(){ document.getElementById("caret").style.left="-55%" }, 100);
+      };
+      document.getElementById('home').onmouseout = function() {
+        setTimeout(function(){ document.getElementById("caret").style.left="-55%" }, 50);
+      };
+      document.getElementById('blog').onmouseover = function() {
+        setTimeout(function(){ document.getElementById("caret").style.left="85%" }, 100);
+      };
+      document.getElementById('blog').onmouseout = function() {
+        setTimeout(function(){ document.getElementById("caret").style.left="-55%" }, 50);
+      };
+      document.getElementById('about').onmouseover = function() {
+        setTimeout(function(){ document.getElementById("caret").style.left="210%" }, 100);
+      };
+      document.getElementById('about').onmouseout = function() {
+        setTimeout(function(){ document.getElementById("caret").style.left="-55%" }, 50);
+      };
+      document.getElementById('content').onmouseover = function() {
+        setTimeout(function(){ document.getElementById("caret").style.left="-55%" }, 100);
+      };
+      </script>
+    	    <script>
+	        $( window ).load(function() {
+	        	setTimeout(null, 2000);
+	        	$("body").show();
+		    });
+		    </script>
+		    		    <script>
+		    var vid = document.getElementById("background");
+			vid.playbackRate = 0.5;
+	 		var h = document.getElementById("background");
+			h.height = screen.height;
+		    </script>
+</html>

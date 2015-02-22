@@ -72,8 +72,8 @@
 }
 .header{
 	position:fixed;
-	top:25%;
-	right:10%;
+	left:37%;
+	top:30%;
 	width:550px;
 	z-index:3;
 }

@@ -20,12 +20,14 @@ h6, .h6 {
 }
 .currentpos{
   position:relative;
-  top:18px;
-  left:-50%;
+  top:16px;
+  left:-55%;
   color:white;
   z-index:99;
+  font-size:1em;
   -moz-transition: all 0.2s;
   -webkit-transition: all 0.2s;
+  cursor:default;
 }
 /*
  * Override Bootstrap's default container.
@@ -55,6 +57,7 @@ h6, .h6 {
   padding: 10px;
   font-weight: 500;
   color: #cdddeb;
+  cursor:pointer;
 }
 .blog-nav-item:hover,
 .blog-nav-item:focus {

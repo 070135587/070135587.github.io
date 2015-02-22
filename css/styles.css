@@ -20,6 +20,8 @@
 	background-color:transparent !important;
 	background:transparent !important;
 	border-bottom:0;
+	-moz-transition: all 0.4s;
+	-webkit-transition: all 0.4s;
 }
 .background{
 	position:absolute;
@@ -126,4 +128,9 @@ body{
 	width:450px;
 	font-size:1.5em;
 	color:white;
+}
+.blog-nav-item{
+	color:white !important;
+	-moz-transition: all 0.4s;
+	-webkit-transition: all 0.4s;
 }

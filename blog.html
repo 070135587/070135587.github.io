@@ -9,11 +9,13 @@
 
     <title>Blog It! ~ Blog</title>
 
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
     <link href="css/blog.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
 
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
@@ -25,14 +27,16 @@
     <![endif]-->
   </head>
 
-  <body>
+  <body style="background-color:white; overflow:auto;">
 
     <div class="blog-masthead">
       <div class="container">
         <nav class="blog-nav">
-          <a class="blog-nav-item" href="index.html">Home</a>
-          <a class="blog-nav-item active">Blog</a>
-          <a class="blog-nav-item" href="#">About</a>
+          <a class="blog-nav-item" href="index.html" id="home">Home&nbsp;&nbsp;</a>
+          <a class="blog-nav-item" id="blog" style="position:fixed;">Blog
+            <i class="fa fa-caret-up fa-lg currentpos" id="caret"></i>
+          </a>
+          <a class="blog-nav-item" href="#" id="about">About</a>
         </nav>
       </div>
     </div>
@@ -152,5 +156,19 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+      <script>
+        $( window ).load(function() {
+          setTimeout(null, 2000);
+          $("body").show();
+      });
+      </script>
+      <script>
+      document.getElementById('home').onmouseover = function() {
+        document.getElementById("caret").style.left="-200%";
+      };
+      document.getElementById('home').onmouseout = function() {
+        document.getElementById("caret").style.left="-50%";
+      };
+      </script>
   </body>
 </html>

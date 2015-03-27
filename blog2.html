@@ -29,7 +29,7 @@
 
   <body style="background-color:white; overflow:auto;" id="body">
 
-    <div class="blog-masthead">
+    <div class="blog-masthead" id="top">
       <div class="container">
         <nav class="blog-nav">
           <a class="blog-nav-item" href="index.html" id="home">Home&nbsp;&nbsp;&nbsp;</a>
@@ -115,7 +115,7 @@
 
     <footer class="blog-footer">
       <p>
-        <a href="#">Back to top</a>
+        <a href="#top">Back to top</a>
       </p>
     </footer>
 
@@ -130,6 +130,22 @@
         $( window ).load(function() {
           setTimeout(null, 2000);
           $("body").show();
+      });
+      </script>
+      <script>
+      $(function() {
+        $('a[href*=#]:not([href=#])').click(function() {
+          if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+            if (target.length) {
+              $('html,body').animate({
+                scrollTop: target.offset().top
+              }, 500);
+              return false;
+            }
+          }
+        });
       });
       </script>
       <script>
